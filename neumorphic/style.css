@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #091921;
+}
+label input {display: none;}
+label .fas {
+    font-size: 10rem;
+    cursor: pointer;
+    color: rgb(199,199,199);
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20rem;
+    background: #091921;
+    box-shadow: -1px -1px 3px rgba(255,255,255,0.1) ,
+    2px 2px 6px rgba(0,0,0,0.8);
+    transition: 0.3s ease-in-out;
+}
+label input:checked ~ .fas {
+    color: #7BFF00;
+    box-shadow: inset -2px -2px 10px rgba(255,255,255,0.05) ,
+    inset 2px 2px 10px #000;
+    transition: 0.3s ease-in-out;
+}
